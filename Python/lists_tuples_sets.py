@@ -1,4 +1,4 @@
-# bad
+# average bad way
 grade_one = 77
 grade_two = 80
 grade_three = 90
@@ -11,10 +11,18 @@ grades.append(199)
 print(sum(grades) / len(grades))
 
 # tuple
-numbers = (1, 2, 3, 4, 5) # can't append
+numbers = (1, 2, 3, 4, 5) # immutable
+numbers = numbers + (99,) # add 99 to tuple and return new tuple
+print(numbers)
 
 # set
-set_grades = {22, 44, 55, 66} # unique & unordered
+set_grades = {22, 44, 55, 66} # unique & unordered => can't access via item index
 print(set_grades)
 
-# finish 12
+## set operations
+your_lottery_numbers = {1, 2, 3, 4, 5}
+winning_numbers = {1, 3, 5, 7, 9}
+
+print(your_lottery_numbers.intersection(winning_numbers)) # numbers in both sets
+print(your_lottery_numbers.union(winning_numbers)) # add two sets ignore dupblicated
+your_lottery_numbers.difference(winning_numbers)
