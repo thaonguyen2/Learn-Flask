@@ -1,0 +1,18 @@
+# show current environment information
+pip freeze
+
+# install virtualenv
+pip install virtualenv
+
+# create virtualenv for current folder
+virtualenv venv --python=python3.7
+
+# enter virtualenv
+source venv/bin/activate
+
+# exit virtualenv
+deactivate
+
+# install Flask-RESTful for current environment
+pip install Flask-RESTful
+
