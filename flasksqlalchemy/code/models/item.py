@@ -1,5 +1,6 @@
 import sqlite3
-#13:42
+
+
 class ItemModel:
     def __init__(self, name, price):
         self.name = name
