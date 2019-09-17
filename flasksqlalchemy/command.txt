@@ -1,4 +1,4 @@
-# show current environment information
+cd# show current environment information
 pip freeze
 
 # install virtualenv
